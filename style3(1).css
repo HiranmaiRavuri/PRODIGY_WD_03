@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #8cfbe3;
+}
+
+.container {
+    text-align: center;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-gap: 5px;
+    margin: 20px auto;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cell:hover {
+    background-color: #dcdada;
+}
+
+#status {
+    margin-top: 20px;
+    font-size: 1.5em;
+}
+
+.cell.x {
+    color: red; /* Color for X */
+}
+
+.cell.o {
+    color: blue; /* Color for O */
+}
+
+.winning-cell {
+    background-color: #eeee08; /* Highlight winning cells */
+}
